@@ -1,0 +1,21 @@
+.centered-text{
+    text-align: center;
+}
+
+.centered-elements{
+    align-items: center;
+    justify-content: center;
+}
+
+.inline-flex{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex{
+    display: flex;
+}
+
+.margin-5{
+    margin: 5px;
+}
