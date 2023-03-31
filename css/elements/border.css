@@ -1,3 +1,9 @@
 .rounded-edges{
     border-radius: 3px;
 }
+
+.white-border{
+    border-width: 2px;
+    border-style: solid;
+    border-color: aliceblue;
+}

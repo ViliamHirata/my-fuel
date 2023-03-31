@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css/elements/div.css"/>
     <link rel="stylesheet" type="text/css" href="css/body/background.css"/>
     <link rel="stylesheet" type="text/css" href="css/font.css"/>  
+    <script src="script/vehicle.js"></script>
     <title>My Fuel</title>
 </head>
 <body class="home-background white">
@@ -18,18 +19,18 @@
             <img src="icon/gas-station_icon_white.svg" width="100vh" height="60vh">
         </div>
     </header>
-    <main class="row-flex main main-background rounded-edges margin-5 size-20">
+    <main class="row-flex main main-background rounded-edges margin-5 size-22">
         <aside class="black column-flex aside-background">
             <div class=" row-flex div-height-15 centered-elements">
                 <div>Vehicles</div>
-                <img src="icon/car_icon_black.svg" width="100vh" height="80vh">
+                <img src="icon/car_icon_black.svg" width="100vh" height="70vh">
             </div>
-            <div class="div-height-70">
+            <div id="vehicleList" class="div-height-70 white-border">
                
             </div>
             <div class=" row-flex div-height-15 centered-elements">
-                <input type="text" placeholder="Write me">
-                <button>New One</button>
+                <input id="vehicleNameInput" type="text" placeholder="Write me">
+                <button onclick="addVehicle()">New One</button>
             </div>
         </aside>
         <section>
