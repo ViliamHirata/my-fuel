@@ -8,7 +8,8 @@
     <link rel="stylesheet" type="text/css" href="css/elements/border.css"/>
     <link rel="stylesheet" type="text/css" href="css/elements/div.css"/>
     <link rel="stylesheet" type="text/css" href="css/body/background.css"/>
-    <link rel="stylesheet" type="text/css" href="css/font.css"/>  
+    <link rel="stylesheet" type="text/css" href="css/font.css"/> 
+    <link rel="stylesheet" type="text/css" href="css/elements/table.css"/> 
     <script src="script/vehicle.js"></script>
     <title>My Fuel</title>
 </head>
@@ -25,8 +26,8 @@
                 <div>Vehicles</div>
                 <img src="icon/car_icon_black.svg" width="100vh" height="70vh">
             </div>
-            <div id="vehicleList" class="div-height-70 white-border">
-               
+            <div class="div-height-70 white-border overflow">
+               <table id="vehicleTable" class="horizontally-align"></table>
             </div>
             <div class=" row-flex div-height-15 centered-elements">
                 <input id="vehicleNameInput" type="text" placeholder="Write me">
@@ -34,7 +35,7 @@
             </div>
         </aside>
         <section>
-            <div>
+            <div class="overflow">
                 
             </div>
         </section>

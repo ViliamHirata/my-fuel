@@ -1,0 +1,12 @@
+table tr:hover{
+    cursor: pointer;
+    background-color: aliceblue;
+}
+
+table{
+    width: 100%;
+}
+
+table tr td{
+    text-align: center;
+}

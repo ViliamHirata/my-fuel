@@ -1,8 +1,11 @@
 var myVehicles = [];
-var list;
+var table;
 
 function vehicle(name){
-    this.name = name;
+    this.name = name,
+    this.getName = function(){
+        return this.name;
+    }
 }
 
 function addVehicle()
@@ -15,6 +18,20 @@ function addVehicle()
 
 function updateVehicleList()
 {
-    list = document.getElementById("vehicleList");
-    list.innerHTML = JSON.stringify(myVehicles);
+    let car = myVehicles[myVehicles.length-1];
+    let name = car.getName();
+    table = document.getElementById("vehicleTable");
+    var tr = document.createElement('tr');
+    tr.onclick=loadVehicleData;
+    var td = document.createElement('td');
+    var textNode = document.createTextNode(name);
+    td.appendChild(textNode);
+    tr.appendChild(td);
+    table.appendChild(tr);
+    //list.innerHTML = JSON.stringify(myVehicles);
+}
+
+function loadVehicleData()
+{
+    
 }

@@ -42,3 +42,7 @@ section{
 .div-height-70{
     height: 70%;
 }
+
+.overflow{
+    overflow: auto;
+}
