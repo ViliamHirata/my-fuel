@@ -28,3 +28,11 @@
 .horizontally-align{
     margin: auto;
 }
+
+.left{
+    float:left;
+}
+
+.right{
+    float: right;
+}

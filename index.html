@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="css/font.css"/> 
     <link rel="stylesheet" type="text/css" href="css/elements/table.css"/> 
     <script src="script/vehicle.js"></script>
+    <script src="script/expense.js"></script>
     <title>My Fuel</title>
 </head>
 <body class="home-background white">
@@ -27,7 +28,7 @@
                 <img src="icon/car_icon_black.svg" width="100vh" height="70vh">
             </div>
             <div class="div-height-70 white-border overflow">
-               <table id="vehicleTable" class="horizontally-align"></table>
+               <table id="vehicleTable"></table>
             </div>
             <div class=" row-flex div-height-15 centered-elements">
                 <input id="vehicleNameInput" type="text" placeholder="Write me">
@@ -35,13 +36,42 @@
             </div>
         </aside>
         <section>
-            <div class="overflow">
-                
+            <div class="overflow black">
+                <table id="expenseTable" class="expense-table">
+                    <tr>
+                        <th>Fuel</th>
+                        <th>Amount</th>
+                        <th>Cost</th>
+                        <th>Distance</th>
+                    </tr>
+                </table>
             </div>
         </section>
-        <aside class="column-flex aside-background">
-            <div>
-                
+        <aside class="column-flex aside-background black">
+            <div class=" row-flex div-height-15 centered-elements">
+                <div>Expenses</div>
+                <img src="icon/fuel-expenses_icon_black.svg" width="100vh" height="70vh">
+            </div>
+            <div class="column-flex div-height-70 white-border overflow">
+                <div class="margin-5">
+                    <label class="left">Type of fuel</label>
+                    <input class="right" id="fuel_type" type="text" style="width:100px">
+                </div>
+                <div class="margin-5">
+                    <label class="left">Amount of fuel</label>
+                    <input class="right"id="fuel_amount" type="number" min=0 style="width:50px">
+                </div>
+                <div class="margin-5">
+                    <label class="left">Cost</label>
+                    <input class="right" id="fuel_cost" type="number" min=0 style="width:50px">
+                </div>
+                <div class="margin-5">
+                    <label class="left">Travelled distance</label>
+                    <input class="right" id="travelled_distance" type="number" min="0" style="width:50px">
+                </div>
+            </div>
+            <div class=" row-flex div-height-15 centered-elements">
+                <button onclick="addExpense()">Submit</button>
             </div>
         </aside>
     </main>

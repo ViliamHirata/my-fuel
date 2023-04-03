@@ -1,12 +1,21 @@
 table tr:hover{
     cursor: pointer;
-    background-color: aliceblue;
+    background-color: white;
 }
 
 table{
+    border-collapse: collapse;
     width: 100%;
+    margin: auto;
 }
 
-table tr td{
+table tr,td,th{
     text-align: center;
+    border: 1px solid #ffffff;
+    padding: 8px;
+    font-family: Calibri Light;
 }
+
+/*table .expense-table tr{
+    background-color: rgb(9, 102, 184);
+}*/
